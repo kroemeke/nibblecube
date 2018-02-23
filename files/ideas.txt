@@ -1,0 +1,9 @@
+1. If client gets connection reset by peer, then this is likely a crash of the server.
+   At that time - log the random seed so that request can be re-created. If ya feel fancy,
+   re-try the same request and automagically confirm that we have a hit.
+
+2. ASAN mode - tap into ASANs counters to get code coverate, just for statistics.
+
+3. Prometheus metrics ? :P
+
+4. 
